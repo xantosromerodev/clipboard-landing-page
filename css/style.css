@@ -1,0 +1,57 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    /* Colores primarios */
+    --strong-cyan-color: hsl(171, 66%, 44%);
+    --light-blue-color: hsl(233, 100%, 69%);
+    /* Colores secundarios */
+    --dark-grayish-blue-color: hsl(210, 10%, 33%);
+    --grayish-blue-color: hsl(201, 11%, 66%);
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Estilos generales */
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+    padding: 15px 30px;
+    border-radius: 30px;
+    color: #FFF;
+    background-color: #0A0A23;
+    font-size: 20px;
+}
+
+.container{
+    border: 2px solid tomato;
+    padding: 20px;
+}
+
+/* Estilos personalizados */
+.brand {
+    text-align: center;
+}
+
+.brand__button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.btn--green {
+    background-color: var(--strong-cyan-color);
+}
+
+.btn--purple {
+    background-color: var(--light-blue-color);
+}
+
+
