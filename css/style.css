@@ -30,6 +30,7 @@ body {
 }
 .section {
     padding: 20px;
+    text-align: center;
 }
 .btn {
     display: inline-block;
@@ -39,6 +40,15 @@ body {
     border-radius: 50px;
     text-align: center;
 }
+h1,
+h2,
+h3 {
+    color: var(--dark-grayish-blue);
+    font-weight: 600;
+}
+p {
+    line-height: 26px;
+}
 
 /* ================================ */
 /* ***** Estilos Seccion Hero ***** */
@@ -46,7 +56,6 @@ body {
 .hero__section {
     height: 100vh;
     flex-direction: column;
-    text-align: center;
     gap: 20px;
 }
 
@@ -64,12 +73,10 @@ source {
 
 .hero__title {
     font-size: 34px;
-    color: var(--dark-grayish-blue);
 }
 
 .hero__text {
     margin-top: -20px;
-    line-height: 26px;
 }
 
 .button {
@@ -86,6 +93,32 @@ source {
 
 .btn--purple {
     background-color: var(--light-blue);
+}
+
+
+/* ===================================== */
+/* ***** Estilos Seccion Keeptrack ***** */
+/* ===================================== */
+.keeptrack__title {
+    font-size: 30px;
+}
+
+.feature__img {
+    padding: 60px 0;
+}
+
+.feature__img--computer {
+    width: 100%;
+    height: 100%;
+}
+
+.feature__list {
+    flex-direction: column;
+    gap: 40px;
+}
+
+.feature__list--title {
+    font-size: 28px;
 }
 
 
