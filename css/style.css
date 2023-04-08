@@ -1,0 +1,110 @@
+/* Fuente */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* Colores */
+    /* Primary */
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+
+    /* Neutral */
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 400;
+    color: var(--grayish-blue);
+}
+
+/* ------------------------ */
+/* ----- Seccion Hero ----- */
+/* ------------------------ */
+
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+    padding: 20px;
+    border: solid;
+}
+
+/* Fondo predeterminado */
+.picture {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -999;
+}
+
+.picture,
+source {
+    width: 100%;
+}
+
+
+/* Estilos titulo h1 */
+.title {
+    font-size: 34px;
+    color: var(--dark-grayish-blue);
+}
+
+/* Estilo que agrupa los botones */
+.button {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Estilo boton general */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn--green {
+    background-color: var(--strong-cyan);
+}
+
+.btn--purple {
+    background-color: var(--light-blue);
+}
+
+
+/* --------------------------------- */
+/* Estilos seccion ? */
+/* --------------------------------- */
+
+
+/* Pantallas grandes */
+@media screen and (min-width: 1080px) {
+
+    .hero {
+        gap: 40px;
+    }
+
+    .text {
+        width: 650px;
+        line-height: 30px;
+    }
+
+    .button {
+        flex-direction: row;
+    }
+}
