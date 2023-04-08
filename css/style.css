@@ -1,13 +1,9 @@
 /* Fuente */
 @import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 
-    /* Colores */
-    /* Primary */
+* {
+    /* Primario */
     --strong-cyan: hsl(171, 66%, 44%);
     --light-blue: hsl(233, 100%, 69%);
 
@@ -23,23 +19,37 @@ body {
     color: var(--grayish-blue);
 }
 
-/* ------------------------ */
-/* ----- Seccion Hero ----- */
-/* ------------------------ */
 
-.hero {
-    height: 100vh;
+/* ============================= */
+/* ***** Estilos Generales ***** */
+/* ============================= */
+.dflex {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.section {
+    padding: 20px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+/* ================================ */
+/* ***** Estilos Seccion Hero ***** */
+/* ================================ */
+.hero__section {
+    height: 100vh;
     flex-direction: column;
     text-align: center;
     gap: 20px;
-    padding: 20px;
-    border: solid;
 }
 
-/* Fondo predeterminado */
 .picture {
     position: absolute;
     top: 0;
@@ -52,30 +62,22 @@ source {
     width: 100%;
 }
 
-
-/* Estilos titulo h1 */
-.title {
+.hero__title {
     font-size: 34px;
     color: var(--dark-grayish-blue);
 }
 
-/* Estilo que agrupa los botones */
+.hero__text {
+    margin-top: -20px;
+    line-height: 26px;
+}
+
 .button {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 20px;
     width: 100%;
-}
-
-/* Estilo boton general */
-.btn {
-    display: inline-block;
-    text-decoration: none;
-    color: #fff;
-    padding: 12px 30px;
-    border-radius: 50px;
-    text-align: center;
 }
 
 .btn--green {
@@ -87,15 +89,12 @@ source {
 }
 
 
-/* --------------------------------- */
-/* Estilos seccion ? */
-/* --------------------------------- */
-
-
-/* Pantallas grandes */
+/* ================================= */
+/* ***** Diseño Web Responsivo ***** */
+/* ================================= */
 @media screen and (min-width: 1080px) {
 
-    .hero {
+    .hero__section {
         gap: 40px;
     }
 
